@@ -1,3 +1,5 @@
+**NOTE**: This project is a copy of https://github.com/microsoft/verified-storage/tree/main/pmemlog. It's main purpose is to illustrate the use of the [scip-callgraph reusable workflow](https://github.com/Beneficial-AI-Foundation/scip-callgraph/blob/main/.github/workflows/generate-callgraph.yml) to generate a graph.
+
 # About
 
 This directory contains the Verus code for a persistent-memory append-only
