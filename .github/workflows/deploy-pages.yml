@@ -7,6 +7,13 @@ on:
     paths:
       - 'docs/**'
       - '.github/workflows/deploy-pages.yml'
+  # Automatically deploy after certification completes
+  workflow_run:
+    workflows: ["Certify Verification Results"]
+    types:
+      - completed
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:

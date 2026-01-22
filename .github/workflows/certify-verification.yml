@@ -279,8 +279,23 @@ jobs:
           ARTIFACT_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           
           if [ -n "$RESULTS_FILE" ] && [ -f "$RESULTS_FILE" ]; then
-            VERIFIED_COUNT=$(jq -r 'try (.summary.verified_functions // 0) catch 0' "$RESULTS_FILE") || VERIFIED_COUNT=0
-            TOTAL_FUNCTIONS=$(jq -r 'try (.summary.total_functions // 0) catch 0' "$RESULTS_FILE") || TOTAL_FUNCTIONS=0
+            # When using -a atoms.json, output is a dictionary of functions
+            # Try new format first (count functions), fall back to old format with .summary
+            if jq -e 'type == "object" and (keys | length) > 0 and (.[keys[0]] | has("status"))' "$RESULTS_FILE" > /dev/null 2>&1; then
+              # New format: dictionary keyed by function name
+              TOTAL_FUNCTIONS=$(jq 'keys | length' "$RESULTS_FILE") || TOTAL_FUNCTIONS=0
+              VERIFIED_COUNT=$(jq '[.[] | select(.status == "verified")] | length' "$RESULTS_FILE") || VERIFIED_COUNT=0
+              echo "Parsed new format: $VERIFIED_COUNT verified out of $TOTAL_FUNCTIONS total"
+            elif jq -e '.summary' "$RESULTS_FILE" > /dev/null 2>&1; then
+              # Old format with .summary
+              VERIFIED_COUNT=$(jq -r '.summary.verified_functions // 0' "$RESULTS_FILE") || VERIFIED_COUNT=0
+              TOTAL_FUNCTIONS=$(jq -r '.summary.total_functions // 0' "$RESULTS_FILE") || TOTAL_FUNCTIONS=0
+              echo "Parsed old format: $VERIFIED_COUNT verified out of $TOTAL_FUNCTIONS total"
+            else
+              echo "WARNING: Could not parse results.json format"
+              VERIFIED_COUNT=0
+              TOTAL_FUNCTIONS=0
+            fi
           else
             echo "WARNING: RESULTS_FILE not found; defaulting verification summary counts to 0."
             VERIFIED_COUNT=0
