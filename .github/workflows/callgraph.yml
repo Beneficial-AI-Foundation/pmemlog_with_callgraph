@@ -14,5 +14,49 @@ permissions:
   id-token: write
 
 jobs:
+  # Extract Verus and Rust versions from Cargo.toml metadata
+  get-versions:
+    name: Get Verus and Rust Version
+    runs-on: ubuntu-latest
+    outputs:
+      verus_version: ${{ steps.extract.outputs.version }}
+      rust_version: ${{ steps.extract.outputs.rust_version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: Cargo.toml
+          sparse-checkout-cone-mode: false
+      
+      - name: Extract versions from Cargo.toml
+        id: extract
+        run: |
+          METADATA=$(grep -A15 '\[package.metadata.verus\]' Cargo.toml)
+          
+          VERSION=$(echo "$METADATA" | grep -E '^\s*release\s*=' | sed 's/.*= *"\([^"]*\)".*/\1/' | head -1)
+          RUST_VERSION=$(echo "$METADATA" | grep -E '^\s*rust-version\s*=' | sed 's/.*= *"\([^"]*\)".*/\1/' | head -1)
+          
+          if [ -n "$VERSION" ]; then
+            echo "Found Verus release version: $VERSION"
+            echo "version=$VERSION" >> $GITHUB_OUTPUT
+          else
+            echo "No Verus release version found, will use latest"
+            echo "version=" >> $GITHUB_OUTPUT
+          fi
+          
+          if [ -n "$RUST_VERSION" ]; then
+            echo "Found Rust version: $RUST_VERSION"
+            echo "rust_version=$RUST_VERSION" >> $GITHUB_OUTPUT
+          else
+            echo "No Rust version found, will use default"
+            echo "rust_version=" >> $GITHUB_OUTPUT
+          fi
+
+  # Generate the call graph using the external workflow
   callgraph:
+    name: Generate Call Graph
+    needs: get-versions
     uses: Beneficial-AI-Foundation/scip-callgraph/.github/workflows/generate-callgraph.yml@main
+    with:
+      verus_version: ${{ needs.get-versions.outputs.verus_version }}
+      rust_version: ${{ needs.get-versions.outputs.rust_version }}

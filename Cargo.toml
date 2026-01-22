@@ -14,3 +14,8 @@ unexpected_cfgs = { level = "allow", check-cfg = ["cfg(verus_keep_ghost)"] }
 
 [package.metadata.verus]
 verify = true
+# Verus release version for CI workflows (should be compatible with the vstd version above)
+# Find releases at: https://github.com/verus-lang/verus/releases
+release = "0.2026.01.10.531beb1"
+# Rust toolchain version required by this Verus release
+rust-version = "1.92.0"
