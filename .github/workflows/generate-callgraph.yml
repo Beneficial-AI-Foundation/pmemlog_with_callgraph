@@ -1,16 +1,19 @@
-# NOTE: This workflow is superseded by certify-verification.yml which handles
-# both verification/certification AND call graph generation with unified Pages deployment.
-# 
-# This workflow is kept for PR checks only (does not deploy to Pages).
-
-name: Generate Call Graph (PR Check)
+name: Generate Call Graph
 
 on:
-  pull_request:
-    branches: [main]
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**/*.rs'
+      - 'Cargo.toml'
+      - '.github/workflows/generate-callgraph.yml'
+  workflow_dispatch:
 
-permissions:
-  contents: read
+# Only allow one callgraph generation at a time
+concurrency:
+  group: "callgraph"
+  cancel-in-progress: true
 
 jobs:
   # Extract Verus and Rust versions from Cargo.toml metadata
@@ -51,11 +54,50 @@ jobs:
             echo "rust_version=" >> $GITHUB_OUTPUT
           fi
 
-  # Generate the call graph using the external workflow (PR check only, no Pages deploy)
-  callgraph:
+  # Generate the call graph using the external workflow
+  generate:
     name: Generate Call Graph
     needs: get-versions
     uses: Beneficial-AI-Foundation/scip-callgraph/.github/workflows/generate-callgraph.yml@main
     with:
+      deploy_mode: subpath
+      subpath: callgraph
       verus_version: ${{ needs.get-versions.outputs.verus_version }}
       rust_version: ${{ needs.get-versions.outputs.rust_version }}
+
+  # Save the generated callgraph to cache for fast access by deploy workflow
+  cache-callgraph:
+    name: Cache Call Graph
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download callgraph viewer artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: callgraph-viewer
+          path: callgraph
+
+      - name: Fix callgraph asset paths for subpath deployment
+        run: |
+          if [ -f callgraph/index.html ]; then
+            echo "Updating asset paths in callgraph/index.html"
+            sed -i 's|"/callgraph/|"/pmemlog/callgraph/|g' callgraph/index.html
+            sed -i 's|href="/assets/|href="/pmemlog/callgraph/assets/|g' callgraph/index.html
+            sed -i 's|src="/assets/|src="/pmemlog/callgraph/assets/|g' callgraph/index.html
+            echo "Fixed asset paths"
+          fi
+
+      - name: Verify callgraph files exist
+        run: |
+          if [ -f callgraph/index.html ]; then
+            echo "✓ Callgraph ready for caching ($(ls callgraph | wc -l) files)"
+          else
+            echo "✗ index.html NOT FOUND"
+            exit 1
+          fi
+
+      - name: Save callgraph to cache
+        uses: actions/cache/save@v4
+        with:
+          path: callgraph
+          key: callgraph-${{ github.sha }}-${{ github.run_id }}
