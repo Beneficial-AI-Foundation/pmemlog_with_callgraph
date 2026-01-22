@@ -230,14 +230,12 @@ jobs:
           MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC_URL }}
           MAINNET_PRIVATE_KEY: ${{ secrets.MAINNET_PRIVATE_KEY }}
           CERTIFY_ADDRESS: ${{ vars.MAINNET_CERTIFIER_ADDRESS }}
+          SAFE_ADDRESS: ${{ vars.MAINNET_SAFE_ADDRESS }}
         run: |
           echo "Certifying verification results hash on Ethereum Mainnet via Gnosis Safe..."
           
           set +e
-          OUTPUT=$(uv run python3 -m certify_cli certify \
-            --network mainnet \
-            --safe ${{ vars.MAINNET_SAFE_ADDRESS }} \
-            --execute 2>/tmp/certify_mainnet_stderr.log)
+          OUTPUT=$(uv run python3 -m certify_cli certify --network mainnet --safe "$SAFE_ADDRESS" --execute 2>/tmp/certify_mainnet_stderr.log)
           EXIT_CODE=$?
           set -e
           
