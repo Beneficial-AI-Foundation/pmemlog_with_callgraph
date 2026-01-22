@@ -279,8 +279,8 @@ jobs:
           ARTIFACT_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           
           if [ -n "$RESULTS_FILE" ] && [ -f "$RESULTS_FILE" ]; then
-            VERIFIED_COUNT=$(jq -r 'try (.summary.verified // 0) catch 0' "$RESULTS_FILE") || VERIFIED_COUNT=0
-            TOTAL_FUNCTIONS=$(jq -r 'try (.summary.total // 0) catch 0' "$RESULTS_FILE") || TOTAL_FUNCTIONS=0
+            VERIFIED_COUNT=$(jq -r 'try (.summary.verified_functions // 0) catch 0' "$RESULTS_FILE") || VERIFIED_COUNT=0
+            TOTAL_FUNCTIONS=$(jq -r 'try (.summary.total_functions // 0) catch 0' "$RESULTS_FILE") || TOTAL_FUNCTIONS=0
           else
             echo "WARNING: RESULTS_FILE not found; defaulting verification summary counts to 0."
             VERIFIED_COUNT=0
