@@ -1,6 +1,17 @@
 {
   "certifications": [
     {
+      "timestamp": "2026-01-22T16:56:46Z",
+      "commit_sha": "e5b2b8c83527db6d46ef112f669b3dc0c1348aba",
+      "commit_short": "e5b2b8c",
+      "artifact_url": "https://github.com/Beneficial-AI-Foundation/pmemlog_with_callgraph/actions/runs/21257120729",
+      "content_hash": "0xf3fbe2a3c08d0a261ec1a7e85f4d5e03279bc09331066c04f35eaec6168ed08e",
+      "mainnet_tx": "0x794d2b2b11c6e60636330f6257b4bd20383992298f13c6ef3793f179eae1f011",
+      "mainnet_etherscan": "https://etherscan.io/tx/0x794d2b2b11c6e60636330f6257b4bd20383992298f13c6ef3793f179eae1f011",
+      "verified_count": 70,
+      "total_functions": 70
+    },
+    {
       "timestamp": "2026-01-22T16:48:36Z",
       "commit_sha": "1fa9cd501cc2ff2f042bdbfd4757c2e288f2476d",
       "commit_short": "1fa9cd5",
