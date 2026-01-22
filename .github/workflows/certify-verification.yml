@@ -234,8 +234,12 @@ jobs:
         run: |
           echo "Certifying verification results hash on Ethereum Mainnet via Gnosis Safe..."
           
+          # Strip any whitespace/newlines from the address
+          SAFE_ADDRESS_CLEAN=$(echo "$SAFE_ADDRESS" | tr -d '[:space:]')
+          echo "Using Safe address: $SAFE_ADDRESS_CLEAN"
+          
           set +e
-          OUTPUT=$(uv run python3 -m certify_cli certify --network mainnet --safe "$SAFE_ADDRESS" --execute 2>/tmp/certify_mainnet_stderr.log)
+          OUTPUT=$(uv run python3 -m certify_cli certify --network mainnet --safe "$SAFE_ADDRESS_CLEAN" --execute 2>/tmp/certify_mainnet_stderr.log)
           EXIT_CODE=$?
           set -e
           
