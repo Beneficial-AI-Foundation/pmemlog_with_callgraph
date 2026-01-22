@@ -10,39 +10,6 @@
       "mainnet_etherscan": "https://etherscan.io/tx/0x794d2b2b11c6e60636330f6257b4bd20383992298f13c6ef3793f179eae1f011",
       "verified_count": 70,
       "total_functions": 70
-    },
-    {
-      "timestamp": "2026-01-22T16:48:36Z",
-      "commit_sha": "1fa9cd501cc2ff2f042bdbfd4757c2e288f2476d",
-      "commit_short": "1fa9cd5",
-      "artifact_url": "https://github.com/Beneficial-AI-Foundation/pmemlog_with_callgraph/actions/runs/21256849792",
-      "content_hash": "0xcebc3ff1a3851800326f762e3c0cbf60b9b4e8a675c8bd3f45f10b10bbdd555b",
-      "mainnet_tx": "0x0c80d764259a47581b57939f154f2f92bac97f6559db9f1455d66d69869d6729",
-      "mainnet_etherscan": "https://etherscan.io/tx/0x0c80d764259a47581b57939f154f2f92bac97f6559db9f1455d66d69869d6729",
-      "verified_count": 0,
-      "total_functions": 70
-    },
-    {
-      "timestamp": "2026-01-22T16:36:24Z",
-      "commit_sha": "6215cad9f7af55eada7a6ab67139b99046bb21cb",
-      "commit_short": "6215cad",
-      "artifact_url": "https://github.com/Beneficial-AI-Foundation/pmemlog_with_callgraph/actions/runs/21256435155",
-      "content_hash": "0x330b6c2fe53ee9d6f440c3af2cfa6d514bc91c0e420e910305bb64a74dbd9939",
-      "mainnet_tx": "0xda79c3090a8924a72e4bcc106d65f63c2bca5527c3e0676f5fa9283007d67e8d",
-      "mainnet_etherscan": "https://etherscan.io/tx/0xda79c3090a8924a72e4bcc106d65f63c2bca5527c3e0676f5fa9283007d67e8d",
-      "verified_count": 0,
-      "total_functions": 0
-    },
-    {
-      "timestamp": "2026-01-22T13:58:46Z",
-      "commit_sha": "904161cf2ae6a16ec5213a4c87845551db1d0909",
-      "commit_short": "904161c",
-      "artifact_url": "https://github.com/Beneficial-AI-Foundation/pmemlog_with_callgraph/actions/runs/21251144906",
-      "content_hash": "0x00a49c13bcbbd1ed9e96cfd4f1644a5f9b80c6d4cf3e291db76e5fe642fcb282",
-      "mainnet_tx": "0x1152b1d0a07f8008586ae52fdc47e2dc7d8cc1382e302a9eb79bbb32277f7680",
-      "mainnet_etherscan": "https://etherscan.io/tx/0x1152b1d0a07f8008586ae52fdc47e2dc7d8cc1382e302a9eb79bbb32277f7680",
-      "verified_count": 0,
-      "total_functions": 0
     }
   ]
 }
