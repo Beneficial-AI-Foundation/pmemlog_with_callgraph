@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pmemlog - Verified Persistent Memory Log</title>
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --accent-green: #3fb950;
+            --accent-blue: #58a6ff;
+            --accent-purple: #a371f7;
+            --border-color: #30363d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        
+        .badge-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .verification-badge {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .badge-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--accent-green), #238636);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        
+        .badge-text h2 {
+            font-size: 1.5rem;
+            color: var(--accent-green);
+            margin-bottom: 0.25rem;
+        }
+        
+        .badge-text p {
+            color: var(--text-secondary);
+        }
+        
+        .certification-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .detail-item {
+            background: var(--bg-tertiary);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        
+        .detail-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+        
+        .detail-value {
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+            font-size: 0.9rem;
+            word-break: break-all;
+        }
+        
+        .detail-value a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        .detail-value a:hover {
+            text-decoration: underline;
+        }
+        
+        .links-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .link-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+        
+        .link-card:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+        
+        .link-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-blue);
+        }
+        
+        .link-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .history-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+        
+        .history-section h2 {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+        
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .history-table th,
+        .history-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .history-table th {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .history-table td {
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+            font-size: 0.85rem;
+        }
+        
+        .history-table a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        .history-table a:hover {
+            text-decoration: underline;
+        }
+        
+        .status-verified {
+            color: var(--accent-green);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        .loading {
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            .verification-badge {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .history-table {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>pmemlog</h1>
+            <p class="subtitle">Verified Persistent Memory Log Implementation</p>
+        </header>
+        
+        <section class="badge-section">
+            <div class="verification-badge">
+                <div class="badge-icon">✓</div>
+                <div class="badge-text">
+                    <h2>Formally Verified with Verus</h2>
+                    <p>Proofs checked and certified on Ethereum</p>
+                </div>
+            </div>
+            
+            <div class="certification-details" id="latest-certification">
+                <p class="loading">Loading certification data...</p>
+            </div>
+        </section>
+        
+        <section class="links-section">
+            <a href="callgraph/" class="link-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <circle cx="4" cy="4" r="2"/>
+                        <circle cx="20" cy="4" r="2"/>
+                        <circle cx="4" cy="20" r="2"/>
+                        <circle cx="20" cy="20" r="2"/>
+                        <line x1="6" y1="6" x2="9" y2="9"/>
+                        <line x1="15" y1="9" x2="18" y2="6"/>
+                        <line x1="9" y1="15" x2="6" y2="18"/>
+                        <line x1="15" y1="15" x2="18" y2="18"/>
+                    </svg>
+                    Call Graph
+                </h3>
+                <p>Interactive visualization of function calls and verification status</p>
+            </a>
+            
+            <a href="https://github.com/Beneficial-AI-Foundation/pmemlog" class="link-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Source Code
+                </h3>
+                <p>View the verified Rust source code on GitHub</p>
+            </a>
+        </section>
+        
+        <section class="history-section">
+            <h2>Certification History</h2>
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Commit</th>
+                        <th>Verified</th>
+                        <th>Mainnet Tx</th>
+                    </tr>
+                </thead>
+                <tbody id="history-body">
+                    <tr>
+                        <td colspan="4" class="loading">Loading history...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <footer>
+            <p>
+                Verified using <a href="https://github.com/verus-lang/verus">Verus</a> | 
+                Certified by <a href="https://beneficial.ai">Beneficial AI Foundation</a>
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        async function loadCertifications() {
+            try {
+                const response = await fetch('certifications.json');
+                if (!response.ok) throw new Error('Not found');
+                const data = await response.json();
+                
+                if (data.certifications && data.certifications.length > 0) {
+                    renderLatest(data.certifications[0]);
+                    renderHistory(data.certifications);
+                } else {
+                    showNoCertifications();
+                }
+            } catch (e) {
+                showNoCertifications();
+            }
+        }
+        
+        function renderLatest(cert) {
+            const container = document.getElementById('latest-certification');
+            const commitUrl = `https://github.com/Beneficial-AI-Foundation/pmemlog/commit/${cert.commit_sha}`;
+            
+            container.innerHTML = `
+                <div class="detail-item">
+                    <div class="detail-label">Last Certified</div>
+                    <div class="detail-value">${new Date(cert.timestamp).toLocaleDateString('en-US', { 
+                        year: 'numeric', month: 'long', day: 'numeric' 
+                    })}</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Commit</div>
+                    <div class="detail-value"><a href="${commitUrl}">${cert.commit_short}</a></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Functions Verified</div>
+                    <div class="detail-value status-verified">${cert.verified_count} / ${cert.total_functions}</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Ethereum Proof</div>
+                    <div class="detail-value">${cert.mainnet_tx 
+                        ? `<a href="${cert.mainnet_etherscan}">View on Etherscan</a>` 
+                        : 'Pending'}</div>
+                </div>
+            `;
+        }
+        
+        function renderHistory(certifications) {
+            const tbody = document.getElementById('history-body');
+            tbody.innerHTML = certifications.slice(0, 10).map(cert => {
+                const date = new Date(cert.timestamp).toLocaleDateString('en-US', { 
+                    year: 'numeric', month: 'short', day: 'numeric' 
+                });
+                const commitUrl = `https://github.com/Beneficial-AI-Foundation/pmemlog/commit/${cert.commit_sha}`;
+                const txLink = cert.mainnet_tx 
+                    ? `<a href="${cert.mainnet_etherscan}">${cert.mainnet_tx.slice(0, 10)}...</a>`
+                    : '-';
+                
+                return `
+                    <tr>
+                        <td>${date}</td>
+                        <td><a href="${commitUrl}">${cert.commit_short}</a></td>
+                        <td class="status-verified">${cert.verified_count}/${cert.total_functions}</td>
+                        <td>${txLink}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+        
+        function showNoCertifications() {
+            document.getElementById('latest-certification').innerHTML = `
+                <p style="color: var(--text-secondary); grid-column: 1/-1;">
+                    No certifications yet. Run the verification workflow to generate the first certification.
+                </p>
+            `;
+            document.getElementById('history-body').innerHTML = `
+                <tr><td colspan="4" style="color: var(--text-secondary);">No certification history available</td></tr>
+            `;
+        }
+        
+        loadCertifications();
+    </script>
+</body>
+</html>

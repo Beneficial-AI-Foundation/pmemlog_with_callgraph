@@ -1,17 +1,16 @@
-name: Generate Call Graph
+# NOTE: This workflow is superseded by certify-verification.yml which handles
+# both verification/certification AND call graph generation with unified Pages deployment.
+# 
+# This workflow is kept for PR checks only (does not deploy to Pages).
+
+name: Generate Call Graph (PR Check)
 
 on:
-  push:
-    branches: [main]
   pull_request:
     branches: [main]
-  workflow_dispatch:  # Allow manual trigger
 
-# Required for GitHub Pages deployment
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
   # Extract Verus and Rust versions from Cargo.toml metadata
@@ -52,7 +51,7 @@ jobs:
             echo "rust_version=" >> $GITHUB_OUTPUT
           fi
 
-  # Generate the call graph using the external workflow
+  # Generate the call graph using the external workflow (PR check only, no Pages deploy)
   callgraph:
     name: Generate Call Graph
     needs: get-versions
