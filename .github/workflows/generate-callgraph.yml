@@ -81,10 +81,13 @@ jobs:
         run: |
           if [ -f callgraph/index.html ]; then
             echo "Updating asset paths in callgraph/index.html"
-            sed -i 's|"/callgraph/|"/pmemlog/callgraph/|g' callgraph/index.html
-            sed -i 's|href="/assets/|href="/pmemlog/callgraph/assets/|g' callgraph/index.html
-            sed -i 's|src="/assets/|src="/pmemlog/callgraph/assets/|g' callgraph/index.html
-            echo "Fixed asset paths"
+            # Use repository name for GitHub Pages path
+            REPO_NAME="${GITHUB_REPOSITORY#*/}"
+            echo "Repository name: $REPO_NAME"
+            sed -i "s|\"/callgraph/|\"/${REPO_NAME}/callgraph/|g" callgraph/index.html
+            sed -i "s|href=\"/assets/|href=\"/${REPO_NAME}/callgraph/assets/|g" callgraph/index.html
+            sed -i "s|src=\"/assets/|src=\"/${REPO_NAME}/callgraph/assets/|g" callgraph/index.html
+            echo "Fixed asset paths for /${REPO_NAME}/"
           fi
 
       - name: Verify callgraph files exist
