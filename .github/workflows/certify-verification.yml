@@ -251,7 +251,8 @@ jobs:
             grep -vi -E '(key|secret|password|token|private)' /tmp/certify_mainnet_stderr.log || echo "(no safe error lines to display)"
           fi
           
-          TX_HASH=$(echo "$OUTPUT" | grep -Eo 'Tx Hash:[[:space:]]*0x[a-fA-F0-9]{64}' | head -1 | sed -E 's/.*0x([a-fA-F0-9]{64})$/\1/')
+          # Match tx hash with or without 0x prefix
+          TX_HASH=$(echo "$OUTPUT" | grep -Eo 'Tx Hash:[[:space:]]*(0x)?[a-fA-F0-9]{64}' | head -1 | grep -Eo '[a-fA-F0-9]{64}$')
           CONTENT_HASH=$(echo "$OUTPUT" | grep -Eo 'Content Hash:[[:space:]]*0x[0-9a-fA-F]+' | head -1 | sed -E 's/.*(0x[0-9a-fA-F]+)/\1/')
           
           if [ -n "$TX_HASH" ]; then
