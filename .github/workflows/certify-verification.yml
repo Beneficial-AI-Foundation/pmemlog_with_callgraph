@@ -281,10 +281,10 @@ jobs:
           if [ -n "$RESULTS_FILE" ] && [ -f "$RESULTS_FILE" ]; then
             # When using -a atoms.json, output is a dictionary of functions
             # Try new format first (count functions), fall back to old format with .summary
-            if jq -e 'type == "object" and (keys | length) > 0 and (.[keys[0]] | has("status"))' "$RESULTS_FILE" > /dev/null 2>&1; then
-              # New format: dictionary keyed by function name
+            if jq -e 'type == "object" and (keys | length) > 0 and (.[keys[0]] | has("verified"))' "$RESULTS_FILE" > /dev/null 2>&1; then
+              # New format: dictionary keyed by function name, with "verified" boolean field
               TOTAL_FUNCTIONS=$(jq 'keys | length' "$RESULTS_FILE") || TOTAL_FUNCTIONS=0
-              VERIFIED_COUNT=$(jq '[.[] | select(.status == "verified")] | length' "$RESULTS_FILE") || VERIFIED_COUNT=0
+              VERIFIED_COUNT=$(jq '[.[] | select(.verified == true)] | length' "$RESULTS_FILE") || VERIFIED_COUNT=0
               echo "Parsed new format: $VERIFIED_COUNT verified out of $TOTAL_FUNCTIONS total"
             elif jq -e '.summary' "$RESULTS_FILE" > /dev/null 2>&1; then
               # Old format with .summary
