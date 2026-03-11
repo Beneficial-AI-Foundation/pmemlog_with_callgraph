@@ -1,0 +1,2545 @@
+{
+  "schema": "probe-verus/extract",
+  "schema-version": "2.0",
+  "tool": {
+    "name": "probe-verus",
+    "version": "4.0.0",
+    "command": "extract"
+  },
+  "source": {
+    "repo": "https://github.com/Beneficial-AI-Foundation/pmemlog_with_callgraph.git",
+    "commit": "3ea6578c0cac7aeab244e858947e1b023760baa1",
+    "language": "rust",
+    "package": "pmemlog",
+    "package-version": "0.1.0"
+  },
+  "timestamp": "2026-03-11T14:15:28Z",
+  "data": {
+    "probe:alloc/https://github.com/rust-lang/rust/library/alloc/slice/to_vec()": {
+      "display-name": "to_vec",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/alloc/slice",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#append()": {
+      "display-name": "append",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/alloc/vec",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#as_slice()": {
+      "display-name": "as_slice",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/alloc/vec",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#len()": {
+      "display-name": "len",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/alloc/vec",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#new()": {
+      "display-name": "new",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/alloc/vec",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#push()": {
+      "display-name": "push",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/alloc/vec",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#splice()": {
+      "display-name": "splice",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/alloc/vec",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:core/https://github.com/rust-lang/rust/library/core/convert/TryInto#try_into()": {
+      "display-name": "try_into",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/core/convert",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:core/https://github.com/rust-lang/rust/library/core/iterator/traits/iter/Iterator#cloned()": {
+      "display-name": "cloned",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/core/iterator/traits/iter",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:core/https://github.com/rust-lang/rust/library/core/option/Option#unwrap()": {
+      "display-name": "unwrap",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/core/option",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:core/https://github.com/rust-lang/rust/library/core/slice/iter()": {
+      "display-name": "iter",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/core/slice",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:core/https://github.com/rust-lang/rust/library/core/slice/len()": {
+      "display-name": "len",
+      "dependencies": [],
+      "code-module": "/github.com/rust-lang/rust/library/core/slice",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:crc64fast/1.1.0/Digest#new()": {
+      "display-name": "new",
+      "dependencies": [],
+      "code-module": "",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:crc64fast/1.1.0/Digest#sum64()": {
+      "display-name": "sum64",
+      "dependencies": [],
+      "code-module": "",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:crc64fast/1.1.0/Digest#write()": {
+      "display-name": "write",
+      "dependencies": [],
+      "code-module": "",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:pmemlog/0.1.0/infinitelog_t/AbstractInfiniteLogState#AbstractInfiniteLogState<Seq<u8>>#append()": {
+      "display-name": "AbstractInfiniteLogState::append",
+      "dependencies": [],
+      "code-module": "infinitelog_t",
+      "code-path": "src/infinitelog_t.rs",
+      "code-text": {
+        "lines-start": 25,
+        "lines-end": 27
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/infinitelog_t/AbstractInfiniteLogState#AbstractInfiniteLogState<int>#advance_head()": {
+      "display-name": "AbstractInfiniteLogState::advance_head",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "infinitelog_t",
+      "code-path": "src/infinitelog_t.rs",
+      "code-text": {
+        "lines-start": 29,
+        "lines-end": 38
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/infinitelog_t/AbstractInfiniteLogState<int>#initialize()": {
+      "display-name": "AbstractInfiniteLogState::initialize",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#empty()"
+      ],
+      "code-module": "infinitelog_t",
+      "code-path": "src/infinitelog_t.rs",
+      "code-text": {
+        "lines-start": 21,
+        "lines-end": 23
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/&UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#untrusted_get_head_and_tail()": {
+      "display-name": "UntrustedLogImpl::untrusted_get_head_and_tail",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_pm_state_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/&WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<PM>#get_pm_ref()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 2063,
+        "lines-end": 2089
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/&UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#untrusted_read()": {
+      "display-name": "UntrustedLogImpl::untrusted_read",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#append()",
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#new()",
+        "probe:core/https://github.com/rust-lang/rust/library/core/option/Option#unwrap()",
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()",
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<u64>#addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/main_t/read_correct_modulo_corruption()",
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_between()",
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_difference_equal()",
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_equal()",
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_not_between()",
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_wrapped_len()",
+        "probe:pmemlog/0.1.0/pmemspec_t/&WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<PM>#get_pm_ref()",
+        "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#read()",
+        "probe:pmemlog/0.1.0/pmemspec_t/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<PersistentMemoryConstants>#constants()",
+        "probe:pmemlog/0.1.0/pmemspec_t/maybe_corrupted()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#add()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#empty()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#new()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1954,
+        "lines-end": 2061
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#append_no_wrap()": {
+      "display-name": "UntrustedLogImpl::append_no_wrap",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#as_slice()",
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<u64>#addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_data_write_is_safe()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_equality_implies_subsubrange_equality()",
+        "probe:pmemlog/0.1.0/logimpl_v/permissions_depend_only_on_recovery_view()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/&mut/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<u64>#write()"
+      ],
+      "code-module": "logimpl_v/&mut",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1698,
+        "lines-end": 1753
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#append_wrap()": {
+      "display-name": "UntrustedLogImpl::append_wrap",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#as_slice()",
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#len()",
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<u64>#addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_data_write_is_safe()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_equality_implies_subsubrange_equality()",
+        "probe:pmemlog/0.1.0/logimpl_v/permissions_depend_only_on_recovery_view()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/&mut/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<u64>#write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/slice/slice_subrange()"
+      ],
+      "code-module": "logimpl_v/&mut",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1755,
+        "lines-end": 1824
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#untrusted_advance_head()": {
+      "display-name": "UntrustedLogImpl::untrusted_advance_head",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#append()",
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#as_slice()",
+        "probe:pmemlog/0.1.0/infinitelog_t/AbstractInfiniteLogState#AbstractInfiniteLogState<int>#advance_head()",
+        "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#update_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_header_correct()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_header_crc_correct()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_header_match()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_headers_unchanged()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_pm_state_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_single_write_crash()",
+        "probe:pmemlog/0.1.0/logimpl_v/metadata_to_bytes()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/&WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<PM>#get_pm_ref()",
+        "probe:pmemlog/0.1.0/pmemspec_t/&mut/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<u64>#write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/bytes_crc()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_to_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v/&mut",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1826,
+        "lines-end": 1952
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#untrusted_append()": {
+      "display-name": "UntrustedLogImpl::untrusted_append",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#append()",
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#as_slice()",
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#len()",
+        "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#append_no_wrap()",
+        "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#append_wrap()",
+        "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#update_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<u64>#addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_append_ib_update()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_header_crc_correct()",
+        "probe:pmemlog/0.1.0/logimpl_v/metadata_to_bytes()",
+        "probe:pmemlog/0.1.0/logimpl_v/permissions_depend_only_on_recovery_view()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/&WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<PM>#get_pm_ref()",
+        "probe:pmemlog/0.1.0/pmemspec_t/&mut/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<u64>#write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/bytes_crc()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_to_le_bytes()"
+      ],
+      "code-module": "logimpl_v/&mut",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1581,
+        "lines-end": 1696
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#update_header()": {
+      "display-name": "UntrustedLogImpl::update_header",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#as_slice()",
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_header_correct()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_inactive_header_update_view()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_inactive_header_update_view_crash()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_same_log_state()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_same_permissions()",
+        "probe:pmemlog/0.1.0/logimpl_v/permissions_depend_only_on_recovery_view()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/&mut/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<u64>#write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_partially_flushed_write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()"
+      ],
+      "code-module": "logimpl_v/&mut",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1317,
+        "lines-end": 1429
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#inv()": {
+      "display-name": "UntrustedLogImpl::inv",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl#UntrustedLogImpl<Seq<u8>>#inv_pm_contents()",
+        "probe:pmemlog/0.1.0/pmemspec_t/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<bool>#inv()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1276,
+        "lines-end": 1283
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl#UntrustedLogImpl<Seq<u8>>#inv_pm_contents()": {
+      "display-name": "UntrustedLogImpl::inv_pm_contents",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1248,
+        "lines-end": 1271
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<&PM>#read_incorruptible_boolean()": {
+      "display-name": "UntrustedLogImpl::read_incorruptible_boolean",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#as_slice()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#constants()",
+        "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#read()",
+        "probe:pmemlog/0.1.0/pmemspec_t/axiom_corruption_detecting_boolean()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#new()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1285,
+        "lines-end": 1315
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Result<UntrustedLogImpl,/InfiniteLogErr>\nwhere\n////Perm:/CheckPermission<Seq<u8>>,\n////PM:/PersistentMemory,>#untrusted_start()": {
+      "display-name": "UntrustedLogImpl::untrusted_start",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#as_slice()",
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<&PM>#read_incorruptible_boolean()",
+        "probe:pmemlog/0.1.0/logimpl_v/crc_and_metadata_bytes_to_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_pm_state_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_u64_bytes_eq()",
+        "probe:pmemlog/0.1.0/pmemspec_t/&WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<PM>#get_pm_ref()",
+        "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#read()",
+        "probe:pmemlog/0.1.0/pmemspec_t/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<PersistentMemoryConstants>#constants()",
+        "probe:pmemlog/0.1.0/pmemspec_t/axiom_bytes_uncorrupted()",
+        "probe:pmemlog/0.1.0/pmemspec_t/bytes_crc()",
+        "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#new()"
+      ],
+      "code-module": "logimpl_v/UntrustedLogImpl<Result<UntrustedLogImpl,/InfiniteLogErr>\nwhere\n////Perm:/CheckPermission<Seq<u8>>,\n////PM:",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1494,
+        "lines-end": 1579
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#log_state_is_valid()": {
+      "display-name": "UntrustedLogImpl::log_state_is_valid",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1184,
+        "lines-end": 1210
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()": {
+      "display-name": "UntrustedLogImpl::recover",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#log_state_is_valid()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#empty()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1212,
+        "lines-end": 1243
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<u64>#addr_logical_to_physical()": {
+      "display-name": "UntrustedLogImpl::addr_logical_to_physical",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1173,
+        "lines-end": 1182
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<u64>#untrusted_setup()": {
+      "display-name": "UntrustedLogImpl::untrusted_setup",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#as_slice()",
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()",
+        "probe:pmemlog/0.1.0/logimpl_v/header_to_bytes()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_header_match()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_header_split_into_bytes()",
+        "probe:pmemlog/0.1.0/logimpl_v/metadata_to_bytes()",
+        "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/bytes_crc()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_to_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#empty()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1433,
+        "lines-end": 1492
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/bytes_to_header()": {
+      "display-name": "bytes_to_header",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/bytes_to_metadata()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_header()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/slice/slice_subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 212,
+        "lines-end": 225
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/bytes_to_metadata()": {
+      "display-name": "bytes_to_metadata",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_metadata()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/slice/slice_subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 249,
+        "lines-end": 264
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/crc_and_metadata_bytes_to_header()": {
+      "display-name": "crc_and_metadata_bytes_to_header",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_metadata()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/slice/slice_subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 295,
+        "lines-end": 315
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/header_to_bytes()": {
+      "display-name": "header_to_bytes",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#append()",
+        "probe:pmemlog/0.1.0/logimpl_v/metadata_to_bytes()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_metadata()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_to_le_bytes()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 227,
+        "lines-end": 247
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_append_data_update_view()": {
+      "display-name": "lemma_append_data_update_view",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_headers_unchanged()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_incorruptible_bool_unchanged()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_equality_implies_subsubrange_equality()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/update_data_view_postcond()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 459,
+        "lines-end": 496
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_append_data_update_view_crash()": {
+      "display-name": "lemma_append_data_update_view_crash",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_headers_unchanged()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_incorruptible_bool_unchanged()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_equality_implies_subsubrange_equality()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_partially_flushed_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 499,
+        "lines-end": 535
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_append_ib_update()": {
+      "display-name": "lemma_append_ib_update",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_append_ib_update_effect_on_committed()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_single_write_crash()",
+        "probe:pmemlog/0.1.0/logimpl_v/permissions_depend_only_on_recovery_view()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_partially_flushed_write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_to_le_bytes()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 784,
+        "lines-end": 869
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_append_ib_update_effect_on_committed()": {
+      "display-name": "lemma_append_ib_update_effect_on_committed",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/infinitelog_t/AbstractInfiniteLogState#AbstractInfiniteLogState<Seq<u8>>#append()",
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_header_correct()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_header_match()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_headers_unchanged()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_pm_state_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/permissions_depend_only_on_recovery_view()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()",
+        "probe:pmemlog/0.1.0/sccf/CheckPermission#check_permission()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_to_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 632,
+        "lines-end": 779
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_bytes_combine_into_header()": {
+      "display-name": "lemma_bytes_combine_into_header",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_seq_addition()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_metadata()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 128,
+        "lines-end": 147
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_data_write_is_safe()": {
+      "display-name": "lemma_data_write_is_safe",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_append_data_update_view()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_append_data_update_view_crash()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_same_log_state()",
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_same_permissions()",
+        "probe:pmemlog/0.1.0/logimpl_v/permissions_depend_only_on_recovery_view()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/update_data_view_postcond()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_partially_flushed_write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 380,
+        "lines-end": 431
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_header_correct()": {
+      "display-name": "lemma_header_correct",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1053,
+        "lines-end": 1073
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_header_crc_correct()": {
+      "display-name": "lemma_header_crc_correct",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1036,
+        "lines-end": 1051
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_header_match()": {
+      "display-name": "lemma_header_match",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_bytes_combine_into_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_header()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 101,
+        "lines-end": 124
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_header_split_into_bytes()": {
+      "display-name": "lemma_header_split_into_bytes",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_metadata_bytes_eq()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_header()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_metadata()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_to_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 151,
+        "lines-end": 174
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_headers_unchanged()": {
+      "display-name": "lemma_headers_unchanged",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_equality_implies_subsubrange_equality_forall()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1007,
+        "lines-end": 1021
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_inactive_header_update_view()": {
+      "display-name": "lemma_inactive_header_update_view",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 538,
+        "lines-end": 582
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_inactive_header_update_view_crash()": {
+      "display-name": "lemma_inactive_header_update_view_crash",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_partially_flushed_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 585,
+        "lines-end": 630
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_incorruptible_bool_unchanged()": {
+      "display-name": "lemma_incorruptible_bool_unchanged",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1023,
+        "lines-end": 1034
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_metadata_bytes_eq()": {
+      "display-name": "lemma_metadata_bytes_eq",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_metadata()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_to_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 333,
+        "lines-end": 365
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_pm_state_header()": {
+      "display-name": "lemma_pm_state_header",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_difference_equal()",
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_equal()",
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_wrapped_len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_mod_division_less_than_divisor()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1108,
+        "lines-end": 1152
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_same_log_state()": {
+      "display-name": "lemma_same_log_state",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()",
+        "probe:pmemlog/0.1.0/logimpl_v/live_data_view_eq()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 894,
+        "lines-end": 953
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_same_permissions()": {
+      "display-name": "lemma_same_permissions",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/permissions_depend_only_on_recovery_view()",
+        "probe:pmemlog/0.1.0/main_t/recovery_view()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 89,
+        "lines-end": 96
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_seq_addition()": {
+      "display-name": "lemma_seq_addition",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 176,
+        "lines-end": 187
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_single_write_crash()": {
+      "display-name": "lemma_single_write_crash",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_partially_flushed_write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1091,
+        "lines-end": 1106
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_eq()": {
+      "display-name": "lemma_subrange_eq",
+      "dependencies": [],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1082,
+        "lines-end": 1087
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_equality_implies_index_equality()": {
+      "display-name": "lemma_subrange_equality_implies_index_equality",
+      "dependencies": [],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 955,
+        "lines-end": 968
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_equality_implies_subsubrange_equality()": {
+      "display-name": "lemma_subrange_equality_implies_subsubrange_equality",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_equality_implies_index_equality()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 970,
+        "lines-end": 982
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_equality_implies_subsubrange_equality_forall()": {
+      "display-name": "lemma_subrange_equality_implies_subsubrange_equality_forall",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/lemma_subrange_equality_implies_subsubrange_equality()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 984,
+        "lines-end": 1005
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/lemma_u64_bytes_eq()": {
+      "display-name": "lemma_u64_bytes_eq",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_to_le_bytes()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1075,
+        "lines-end": 1080
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/live_data_view_eq()": {
+      "display-name": "live_data_view_eq",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 871,
+        "lines-end": 892
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/metadata_to_bytes()": {
+      "display-name": "metadata_to_bytes",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#append()",
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#new()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_metadata()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_to_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#empty()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 266,
+        "lines-end": 293
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/permissions_depend_only_on_recovery_view()": {
+      "display-name": "permissions_depend_only_on_recovery_view",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/main_t/recovery_view()",
+        "probe:pmemlog/0.1.0/sccf/CheckPermission#check_permission()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 84,
+        "lines-end": 87
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()": {
+      "display-name": "pm_to_views",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_metadata()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 47,
+        "lines-end": 72
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()": {
+      "display-name": "spec_addr_logical_to_physical",
+      "dependencies": [],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 1154,
+        "lines-end": 1156
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_header()": {
+      "display-name": "spec_bytes_to_header",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_metadata()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 367,
+        "lines-end": 377
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/spec_bytes_to_metadata()": {
+      "display-name": "spec_bytes_to_metadata",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 317,
+        "lines-end": 329
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()": {
+      "display-name": "spec_get_live_header",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 74,
+        "lines-end": 82
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/logimpl_v/update_data_view_postcond()": {
+      "display-name": "update_data_view_postcond",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()",
+        "probe:pmemlog/0.1.0/logimpl_v/pm_to_views()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_addr_logical_to_physical()",
+        "probe:pmemlog/0.1.0/logimpl_v/spec_get_live_header()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()"
+      ],
+      "code-module": "logimpl_v",
+      "code-path": "src/logimpl_v.rs",
+      "code-text": {
+        "lines-start": 433,
+        "lines-end": 456
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/main()": {
+      "display-name": "main",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#new()",
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#push()",
+        "probe:pmemlog/0.1.0/main_t/&InfiniteLogImpl<PM>#InfiniteLogImpl<Result<(u64,/u64,/u64),/InfiniteLogErr>>#get_head_and_tail()",
+        "probe:pmemlog/0.1.0/main_t/&mut/InfiniteLogImpl<PM>#InfiniteLogImpl<&Vec<u8>>#append()",
+        "probe:pmemlog/0.1.0/main_t/InfiniteLogImpl<u64>#setup()",
+        "probe:pmemlog/0.1.0/main_t/InfiniteLogImpl<u64>#start()",
+        "probe:pmemlog/0.1.0/pmemmock_t/VolatileMemoryMockingPersistentMemory<u64>#new()"
+      ],
+      "code-module": "",
+      "code-path": "src/main.rs",
+      "code-text": {
+        "lines-start": 20,
+        "lines-end": 40
+      },
+      "kind": "exec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/main_t/&InfiniteLogImpl<PM>#InfiniteLogImpl<Result<(u64,/u64,/u64),/InfiniteLogErr>>#get_head_and_tail()": {
+      "display-name": "InfiniteLogImpl::get_head_and_tail",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/&UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#untrusted_get_head_and_tail()"
+      ],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 274,
+        "lines-end": 295
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/main_t/&InfiniteLogImpl<PM>#InfiniteLogImpl<u64>#read()": {
+      "display-name": "InfiniteLogImpl::read",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/&UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#untrusted_read()",
+        "probe:pmemlog/0.1.0/main_t/read_correct_modulo_corruption()"
+      ],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 234,
+        "lines-end": 270
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/main_t/&mut/InfiniteLogImpl<PM>#InfiniteLogImpl<&Vec<u8>>#append()": {
+      "display-name": "InfiniteLogImpl::append",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/infinitelog_t/AbstractInfiniteLogState#AbstractInfiniteLogState<Seq<u8>>#append()",
+        "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#untrusted_append()",
+        "probe:pmemlog/0.1.0/main_t/TrustedPermission<spec_fn(AbstractInfiniteLogState>#new()"
+      ],
+      "code-module": "main_t/&mut",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 151,
+        "lines-end": 188
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/main_t/&mut/InfiniteLogImpl<PM>#InfiniteLogImpl<u64>#advance_head()": {
+      "display-name": "InfiniteLogImpl::advance_head",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/infinitelog_t/AbstractInfiniteLogState#AbstractInfiniteLogState<int>#advance_head()",
+        "probe:pmemlog/0.1.0/logimpl_v/&mut/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#untrusted_advance_head()",
+        "probe:pmemlog/0.1.0/main_t/TrustedPermission<spec_fn(AbstractInfiniteLogState>#new()"
+      ],
+      "code-module": "main_t/&mut",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 191,
+        "lines-end": 230
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/main_t/InfiniteLogImpl<PM>#InfiniteLogImpl<Option<AbstractInfiniteLogState>>#view()": {
+      "display-name": "InfiniteLogImpl::view",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/main_t/recovery_view()"
+      ],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 82,
+        "lines-end": 85
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/main_t/InfiniteLogImpl<PM>#InfiniteLogImpl<PersistentMemoryConstants>#constants()": {
+      "display-name": "InfiniteLogImpl::constants",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<PersistentMemoryConstants>#constants()"
+      ],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 87,
+        "lines-end": 90
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/main_t/InfiniteLogImpl<PM>#InfiniteLogImpl<bool>#valid()": {
+      "display-name": "InfiniteLogImpl::valid",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl#UntrustedLogImpl<&WriteRestrictedPersistentMemory<Perm>#inv()",
+        "probe:pmemlog/0.1.0/main_t/recovery_view()"
+      ],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 92,
+        "lines-end": 95
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/main_t/InfiniteLogImpl<u64>#setup()": {
+      "display-name": "InfiniteLogImpl::setup",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<u64>#untrusted_setup()",
+        "probe:pmemlog/0.1.0/main_t/recovery_view()"
+      ],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 101,
+        "lines-end": 117
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/main_t/InfiniteLogImpl<u64>#start()": {
+      "display-name": "InfiniteLogImpl::start",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Result<UntrustedLogImpl,/InfiniteLogErr>\nwhere\n////Perm:/CheckPermission<Seq<u8>>,\n////PM:/PersistentMemory,>#untrusted_start()",
+        "probe:pmemlog/0.1.0/main_t/TrustedPermission<spec_fn(AbstractInfiniteLogState>#new()",
+        "probe:pmemlog/0.1.0/main_t/recovery_view()",
+        "probe:pmemlog/0.1.0/pmemspec_t/WriteRestrictedPersistentMemory<PM>#new()"
+      ],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 123,
+        "lines-end": 147
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/main_t/TrustedPermission#CheckPermission<Seq<u8>>#check_permission()": {
+      "display-name": "TrustedPermission::check_permission",
+      "dependencies": [],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 45,
+        "lines-end": 47
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/main_t/TrustedPermission<spec_fn(AbstractInfiniteLogState>#new()": {
+      "display-name": "TrustedPermission::new",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/main_t/recovery_view()",
+        "probe:pmemlog/0.1.0/sccf/is_state_allowable()"
+      ],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 51,
+        "lines-end": 58
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/main_t/read_correct_modulo_corruption()": {
+      "display-name": "read_correct_modulo_corruption",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/all_elements_unique()",
+        "probe:pmemlog/0.1.0/pmemspec_t/maybe_corrupted()"
+      ],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 20,
+        "lines-end": 32
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/main_t/recovery_view()": {
+      "display-name": "recovery_view",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/logimpl_v/UntrustedLogImpl<Seq<u8>>#recover()"
+      ],
+      "code-module": "main_t",
+      "code-path": "src/main_t.rs",
+      "code-text": {
+        "lines-start": 15,
+        "lines-end": 18
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_div_relation_when_mods_have_different_order()": {
+      "display-name": "lemma_div_relation_when_mods_have_different_order",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_inequality()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_commutative()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub_other_way()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 99,
+        "lines-end": 129
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_div_relation_when_mods_have_different_order_alt()": {
+      "display-name": "lemma_div_relation_when_mods_have_different_order_alt",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_inequality()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_commutative()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub_other_way()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 131,
+        "lines-end": 161
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_div_relation_when_mods_have_same_order()": {
+      "display-name": "lemma_div_relation_when_mods_have_same_order",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_inequality()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_commutative()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub_other_way()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 41,
+        "lines-end": 69
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_div_relation_when_mods_have_same_order_alt()": {
+      "display-name": "lemma_div_relation_when_mods_have_same_order_alt",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_inequality()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_commutative()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub_other_way()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 71,
+        "lines-end": 97
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mod_addition_when_bounded()": {
+      "display-name": "lemma_mod_addition_when_bounded",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod_converse()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_commutative()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 230,
+        "lines-end": 241
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mod_auto_basics()": {
+      "display-name": "lemma_mod_auto_basics",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_basic_div_specific_divisor()",
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_by_zero_is_zero()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_inequality()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_add()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 8,
+        "lines-end": 39
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mod_between()": {
+      "display-name": "lemma_mod_between",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/math_v/lemma_div_relation_when_mods_have_same_order()",
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_auto_basics()",
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod_converse()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_commutative()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 163,
+        "lines-end": 195
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mod_difference_equal()": {
+      "display-name": "lemma_mod_difference_equal",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/math_v/lemma_div_relation_when_mods_have_same_order_alt()",
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 243,
+        "lines-end": 261
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mod_equal()": {
+      "display-name": "lemma_mod_equal",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_difference_equal()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 283,
+        "lines-end": 293
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mod_equal_converse()": {
+      "display-name": "lemma_mod_equal_converse",
+      "dependencies": [],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 295,
+        "lines-end": 301
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mod_not_between()": {
+      "display-name": "lemma_mod_not_between",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/math_v/lemma_div_relation_when_mods_have_different_order()",
+        "probe:pmemlog/0.1.0/math_v/lemma_div_relation_when_mods_have_same_order()",
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_auto_basics()",
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 197,
+        "lines-end": 228
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mod_not_equal()": {
+      "display-name": "lemma_mod_not_equal",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/math_v/lemma_mod_equal()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 303,
+        "lines-end": 322
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mod_subtract()": {
+      "display-name": "lemma_mod_subtract",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/math_v/lemma_mul_div_equal()",
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_commutative()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_add_other_way()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 332,
+        "lines-end": 351
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mod_wrapped_len()": {
+      "display-name": "lemma_mod_wrapped_len",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/math_v/lemma_div_relation_when_mods_have_different_order_alt()",
+        "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()",
+        "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub()"
+      ],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 263,
+        "lines-end": 281
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/math_v/lemma_mul_div_equal()": {
+      "display-name": "lemma_mul_div_equal",
+      "dependencies": [],
+      "code-module": "math_v",
+      "code-path": "src/math_v.rs",
+      "code-text": {
+        "lines-start": 325,
+        "lines-end": 330
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/pmemmock_t/VolatileMemoryMockingPersistentMemory#PersistentMemory<PersistentMemoryConstants>#constants()": {
+      "display-name": "VolatileMemoryMockingPersistentMemory::constants",
+      "dependencies": [],
+      "code-module": "pmemmock_t",
+      "code-path": "src/pmemmock_t.rs",
+      "code-text": {
+        "lines-start": 36,
+        "lines-end": 39
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemmock_t/VolatileMemoryMockingPersistentMemory#PersistentMemory<Seq<u8>>#view()": {
+      "display-name": "VolatileMemoryMockingPersistentMemory::view",
+      "dependencies": [],
+      "code-module": "pmemmock_t",
+      "code-path": "src/pmemmock_t.rs",
+      "code-text": {
+        "lines-start": 26,
+        "lines-end": 29
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemmock_t/VolatileMemoryMockingPersistentMemory#PersistentMemory<bool>#inv()": {
+      "display-name": "VolatileMemoryMockingPersistentMemory::inv",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#len()"
+      ],
+      "code-module": "pmemmock_t",
+      "code-path": "src/pmemmock_t.rs",
+      "code-text": {
+        "lines-start": 31,
+        "lines-end": 34
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemmock_t/VolatileMemoryMockingPersistentMemory#PersistentMemory<u64>#read()": {
+      "display-name": "VolatileMemoryMockingPersistentMemory::read",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/slice/to_vec()",
+        "probe:core/https://github.com/rust-lang/rust/library/core/convert/TryInto#try_into()"
+      ],
+      "code-module": "pmemmock_t",
+      "code-path": "src/pmemmock_t.rs",
+      "code-text": {
+        "lines-start": 42,
+        "lines-end": 47
+      },
+      "kind": "exec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemmock_t/VolatileMemoryMockingPersistentMemory#PersistentMemory<u64>#write()": {
+      "display-name": "VolatileMemoryMockingPersistentMemory::write",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#splice()",
+        "probe:core/https://github.com/rust-lang/rust/library/core/convert/TryInto#try_into()",
+        "probe:core/https://github.com/rust-lang/rust/library/core/iterator/traits/iter/Iterator#cloned()",
+        "probe:core/https://github.com/rust-lang/rust/library/core/slice/iter()",
+        "probe:core/https://github.com/rust-lang/rust/library/core/slice/len()"
+      ],
+      "code-module": "pmemmock_t",
+      "code-path": "src/pmemmock_t.rs",
+      "code-text": {
+        "lines-start": 50,
+        "lines-end": 54
+      },
+      "kind": "exec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemmock_t/VolatileMemoryMockingPersistentMemory<u64>#new()": {
+      "display-name": "VolatileMemoryMockingPersistentMemory::new",
+      "dependencies": [],
+      "code-module": "pmemmock_t",
+      "code-path": "src/pmemmock_t.rs",
+      "code-text": {
+        "lines-start": 14,
+        "lines-end": 22
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/&WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<PM>#get_pm_ref()": {
+      "display-name": "WriteRestrictedPersistentMemory::get_pm_ref",
+      "dependencies": [],
+      "code-module": "pmemspec_t/&WriteRestrictedPersistentMemory<Perm,",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 267,
+        "lines-end": 276
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/&mut/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<u64>#write()": {
+      "display-name": "WriteRestrictedPersistentMemory::write",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_partially_flushed_write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()"
+      ],
+      "code-module": "pmemspec_t/&mut/WriteRestrictedPersistentMemory<Perm,",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 283,
+        "lines-end": 301
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#constants()": {
+      "display-name": "constants",
+      "dependencies": [],
+      "code-module": "pmemspec_t",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#inv()": {
+      "display-name": "inv",
+      "dependencies": [],
+      "code-module": "pmemspec_t",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#read()": {
+      "display-name": "read",
+      "dependencies": [],
+      "code-module": "pmemspec_t",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#write()": {
+      "display-name": "write",
+      "dependencies": [],
+      "code-module": "pmemspec_t",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/WriteRestrictedPersistentMemory<PM>#new()": {
+      "display-name": "WriteRestrictedPersistentMemory::new",
+      "dependencies": [],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 256,
+        "lines-end": 265
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<PersistentMemoryConstants>#constants()": {
+      "display-name": "WriteRestrictedPersistentMemory::constants",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#constants()"
+      ],
+      "code-module": "pmemspec_t/WriteRestrictedPersistentMemory<Perm,",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 252,
+        "lines-end": 254
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<Seq<u8>>#view()": {
+      "display-name": "WriteRestrictedPersistentMemory::view",
+      "dependencies": [],
+      "code-module": "pmemspec_t/WriteRestrictedPersistentMemory<Perm,",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 244,
+        "lines-end": 246
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/WriteRestrictedPersistentMemory<Perm,/PM>#WriteRestrictedPersistentMemory<bool>#inv()": {
+      "display-name": "WriteRestrictedPersistentMemory::inv",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/PersistentMemory#inv()"
+      ],
+      "code-module": "pmemspec_t/WriteRestrictedPersistentMemory<Perm,",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 248,
+        "lines-end": 250
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/all_elements_unique()": {
+      "display-name": "all_elements_unique",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()"
+      ],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 25,
+        "lines-end": 27
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/axiom_bytes_uncorrupted()": {
+      "display-name": "axiom_bytes_uncorrupted",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/all_elements_unique()",
+        "probe:pmemlog/0.1.0/pmemspec_t/maybe_corrupted()",
+        "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()"
+      ],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 69,
+        "lines-end": 80
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/axiom_corruption_detecting_boolean()": {
+      "display-name": "axiom_corruption_detecting_boolean",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/all_elements_unique()",
+        "probe:pmemlog/0.1.0/pmemspec_t/maybe_corrupted()",
+        "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_to_le_bytes()"
+      ],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 97,
+        "lines-end": 105
+      },
+      "kind": "proof",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/bytes_crc()": {
+      "display-name": "bytes_crc",
+      "dependencies": [
+        "probe:alloc/https://github.com/rust-lang/rust/library/alloc/vec/Vec#as_slice()",
+        "probe:crc64fast/1.1.0/Digest#new()",
+        "probe:crc64fast/1.1.0/Digest#sum64()",
+        "probe:crc64fast/1.1.0/Digest#write()",
+        "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()",
+        "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_to_le_bytes()"
+      ],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 41,
+        "lines-end": 54
+      },
+      "kind": "exec",
+      "language": "rust",
+      "verification-status": "verified",
+      "specified": true
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/maybe_corrupted()": {
+      "display-name": "maybe_corrupted",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/maybe_corrupted_byte()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()"
+      ],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 31,
+        "lines-end": 34
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/maybe_corrupted_byte()": {
+      "display-name": "maybe_corrupted_byte",
+      "dependencies": [],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 29,
+        "lines-end": 29
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/spec_crc_bytes()": {
+      "display-name": "spec_crc_bytes",
+      "dependencies": [],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 38,
+        "lines-end": 38
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/update_byte_to_reflect_partially_flushed_write()": {
+      "display-name": "update_byte_to_reflect_partially_flushed_write",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/update_byte_to_reflect_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/set/Set#contains()"
+      ],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 193,
+        "lines-end": 203
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/update_byte_to_reflect_write()": {
+      "display-name": "update_byte_to_reflect_write",
+      "dependencies": [
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()"
+      ],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 162,
+        "lines-end": 171
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_partially_flushed_write()": {
+      "display-name": "update_contents_to_reflect_partially_flushed_write",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/update_byte_to_reflect_partially_flushed_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#new()"
+      ],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 211,
+        "lines-end": 221
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/pmemspec_t/update_contents_to_reflect_write()": {
+      "display-name": "update_contents_to_reflect_write",
+      "dependencies": [
+        "probe:pmemlog/0.1.0/pmemspec_t/update_byte_to_reflect_write()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()",
+        "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#new()"
+      ],
+      "code-module": "pmemspec_t",
+      "code-path": "src/pmemspec_t.rs",
+      "code-text": {
+        "lines-start": 176,
+        "lines-end": 185
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:pmemlog/0.1.0/sccf/CheckPermission#check_permission()": {
+      "display-name": "check_permission",
+      "dependencies": [],
+      "code-module": "sccf",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:pmemlog/0.1.0/sccf/is_state_allowable()": {
+      "display-name": "is_state_allowable",
+      "dependencies": [],
+      "code-module": "sccf",
+      "code-path": "src/sccf.rs",
+      "code-text": {
+        "lines-start": 9,
+        "lines-end": 24
+      },
+      "kind": "spec",
+      "language": "rust",
+      "specified": false
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/bytes/lemma_auto_spec_u64_to_from_le_bytes()": {
+      "display-name": "lemma_auto_spec_u64_to_from_le_bytes",
+      "dependencies": [],
+      "code-module": "bytes",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_from_le_bytes()": {
+      "display-name": "spec_u64_from_le_bytes",
+      "dependencies": [],
+      "code-module": "bytes",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/bytes/spec_u64_to_le_bytes()": {
+      "display-name": "spec_u64_to_le_bytes",
+      "dependencies": [],
+      "code-module": "bytes",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_from_le_bytes()": {
+      "display-name": "u64_from_le_bytes",
+      "dependencies": [],
+      "code-module": "bytes",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/bytes/u64_to_le_bytes()": {
+      "display-name": "u64_to_le_bytes",
+      "dependencies": [],
+      "code-module": "bytes",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_basic_div_specific_divisor()": {
+      "display-name": "lemma_basic_div_specific_divisor",
+      "dependencies": [],
+      "code-module": "div_mod/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod()": {
+      "display-name": "lemma_fundamental_div_mod",
+      "dependencies": [],
+      "code-module": "div_mod/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_fundamental_div_mod_converse()": {
+      "display-name": "lemma_fundamental_div_mod_converse",
+      "dependencies": [],
+      "code-module": "div_mod/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/div_mod/arithmetic/lemma_mod_division_less_than_divisor()": {
+      "display-name": "lemma_mod_division_less_than_divisor",
+      "dependencies": [],
+      "code-module": "div_mod/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_by_zero_is_zero()": {
+      "display-name": "lemma_mul_by_zero_is_zero",
+      "dependencies": [],
+      "code-module": "mul/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_inequality()": {
+      "display-name": "lemma_mul_inequality",
+      "dependencies": [],
+      "code-module": "mul/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_commutative()": {
+      "display-name": "lemma_mul_is_commutative",
+      "dependencies": [],
+      "code-module": "mul/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_add()": {
+      "display-name": "lemma_mul_is_distributive_add",
+      "dependencies": [],
+      "code-module": "mul/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_add_other_way()": {
+      "display-name": "lemma_mul_is_distributive_add_other_way",
+      "dependencies": [],
+      "code-module": "mul/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub()": {
+      "display-name": "lemma_mul_is_distributive_sub",
+      "dependencies": [],
+      "code-module": "mul/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/mul/arithmetic/lemma_mul_is_distributive_sub_other_way()": {
+      "display-name": "lemma_mul_is_distributive_sub_other_way",
+      "dependencies": [],
+      "code-module": "mul/arithmetic",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#add()": {
+      "display-name": "add",
+      "dependencies": [],
+      "code-module": "seq",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#empty()": {
+      "display-name": "empty",
+      "dependencies": [],
+      "code-module": "seq",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#len()": {
+      "display-name": "len",
+      "dependencies": [],
+      "code-module": "seq",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#new()": {
+      "display-name": "new",
+      "dependencies": [],
+      "code-module": "seq",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/seq/Seq#subrange()": {
+      "display-name": "subrange",
+      "dependencies": [],
+      "code-module": "seq",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/set/Set#contains()": {
+      "display-name": "contains",
+      "dependencies": [],
+      "code-module": "set",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    },
+    "probe:vstd/0.0.0-2026-01-11-0057/slice/slice_subrange()": {
+      "display-name": "slice_subrange",
+      "dependencies": [],
+      "code-module": "slice",
+      "code-path": "",
+      "code-text": {
+        "lines-start": 0,
+        "lines-end": 0
+      },
+      "kind": "exec",
+      "language": "rust"
+    }
+  }
+}
