@@ -1,5 +1,5 @@
 **NOTE**: This project is a copy of https://github.com/microsoft/verified-storage/tree/main/pmemlog. It's main purpose is to illustrate:
-- the use of the [scip-callgraph reusable workflow](https://github.com/Beneficial-AI-Foundation/scip-callgraph/blob/main/.github/workflows/generate-callgraph.yml) to generate a graph
+- the use of the [probegraph reusable workflow](https://github.com/Beneficial-AI-Foundation/probegraph/blob/main/.github/workflows/generate-callgraph.yml) to generate a graph
 - and as a usecase for "certification"
 
 # About
